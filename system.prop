@@ -32,9 +32,6 @@ voice.voip.conc.disabled=true
 # Bluetooth
 bluetooth.hfp.client=1
 
-# Camera
-persist.camera.HAL3.enabled=1
-
 # Dex2oat threads for faster app installation
 ro.sys.fw.dex2oat_thread_count=4
 
