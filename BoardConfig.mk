@@ -40,6 +40,10 @@ TARGET_BOARD_SUFFIX := _64
 TARGET_USES_64_BIT_BINDER := true
 ENABLE_CPUSETS := true
 
+# CFLAGS - Used in GCC 5+ for cortex-a72 optimizations
+TARGET_GLOBAL_CFLAGS += -mtune=cortex-a72.cortex-a53+crypto -mcpu=cortex-a72.cortex-a53+crypto
+TARGET_GLOBAL_CPPFLAGS += -mtune=cortex-a72.cortex-a53+crypto -mcpu=cortex-a72.cortex-a53+crypto
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8952
 TARGET_NO_BOOTLOADER := true
